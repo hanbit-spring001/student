@@ -18,6 +18,8 @@ public class HelloSpring {
 		System.out.println(oldBean.getValue());
 		System.out.println(oldBean2.getValue());
 		
+		
+		//context를 룩업하는 단계에서 객체를 생성 > 이후 재활용
 		FirstBean springBean = applicationContext.getBean(FirstBean.class);
 		FirstBean springBean2 = applicationContext.getBean(FirstBean.class);
 		
